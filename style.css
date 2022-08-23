@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header1 {
+    background-color:#FFD695;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.mtb {
+    height: 100px;  
+}
+.dropdown{
+display: flex;
+justify-content:end;
+margin-left: 20px;
+border-radius: 15px;
+border: none;
+}
+
+.input {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #a0a0a0;
+    box-shadow: 6px 6px 12px #ffffff,
+                -6px -6px 12px #c5c5c5;
+    font-size: medium;
+    font-weight: bold;
+    min-width: 500px;
+    color: white;
+    
+   }
+   
+   .input:focus {
+    outline-color: rgb(146, 145, 145);
+    
+
+   }
+   .buscador {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+   }
+
+   .homtr {
+    display: flex;
+    justify-content: center;
+   }
+   
+.encontra {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+
+} 
+.arturito {
+    height: 10px;
+    width: 10px;
+ 
+}
+
+@media screen and (min-width: 240) {
+
+
+    .header1 {
+        background-color:#FFD695;
+        height: 100px;
+    }
+    .mtb {
+        height: 100px;   
+    }
+    .dropdown{
+    display: flex;
+    justify-content:end;
+    margin-left: 20px;
+    border-radius: 15px;
+    border: none;
+    }
+    
+    .input {
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: #a0a0a0;
+        box-shadow: 6px 6px 12px #ffffff,
+                    -6px -6px 12px #c5c5c5;
+        font-size: medium;
+        font-weight: bold;
+        min-width: 500px;
+        color: white;
+        
+       }
+       
+       .input:focus {
+        outline-color: rgb(146, 145, 145);
+        
+    
+       }
+       .buscador {
+        display: flex;
+        justify-content: center;
+        margin-top: 300px;
+       }
+    
+       .homtr {
+        display: flex;
+        justify-content: center;
+       }
+       
+    }
