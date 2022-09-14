@@ -107,13 +107,7 @@ border: none;
     flex-direction: column;
     align-items: center;
   }
-  .formulario {
-    margin-top: 10px;
-    padding: 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+ 
   .fondosesion {
     background-image: url(fondoblanco.png); 
   }
@@ -140,6 +134,8 @@ border: none;
    color: #fc9d05;
 }
 .link {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: #222;
 }
@@ -153,6 +149,31 @@ border: none;
 .verPerfil:hover {
     background-color: #FFD695;
     border-radius: 22px 100px;
+}
+.customer {
+    display: flex;
+    justify-content: center;
+}
+.ingreseDatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 10px 10px 10px rgb(12, 11, 11);
+}
+#p1 {
+    display: flex;
+    justify-content: center;
+}
+.column-2 {
+    display: grid;
+    align-content: space-around;
+}
+.botoncito {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    
 }
 @media screen and (min-width: 240) {
 

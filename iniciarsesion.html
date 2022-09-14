@@ -15,22 +15,33 @@
     <div class="mitrabajo1">
     <a class="mt1" href="index.html"><b>Mi Trabajo</b></a>
     </div>
-    <form class="formulario">
-        <h1 class="registro">Ingresar</h1>
-        <div class="contenedor1">
-        <div class="input-contenedor">
-            <i class="fas fa-envelope icon"></i>
-            <input type="text" placeholder="E-mail">
-        </div>
-        <div class="input-contenedor">
+    <h1 class="ingreseDatos">Ingresar Datos</h1>
+    <section class="customer" id="customer">
+    
+    <div class="contact-card">
+        <div class="form">
+            <div class="column-1">
+                <label for="correo"></label>
+                <laberl for="contraseña"></laberl>
+            </div>
+            <div class="column-2">
+            <div class="input-contenedor">
+            <i class="fas fa-user icon"></i>
+            <input class="field" type="text" placeholder="nombre de usuario" name="correo" id="usuario">
+            </div>
+            <div class="input-contenedor">
             <i class="fas fa-key icon"></i>
-            <input type="password" placeholder="Contraseña">
+            <input class="field" type="password" placeholder="contraseña" name="contraseña" id="clave">
+            </div>
+            <input type="submit" value="iniciar sesion"id="ingreso"></input>
+            </div>
         </div>
-        <input type="submit" value="Ingresar"id="button"></input>
-        <p id="p1">¿no tienes cuenta?<p><a class="link" href="registrarme.html"><b>registrarme</b></a>
     </div>
-</div>
-<form>
+    </section>
+    <p id="p1">¿no tienes cuenta?<p><a class="link" href="registrarme.html"><b>registrarme</b></a>   
+        
+    
+
     <div class="arturo">
         <img src="arturo.jpg" alt="arturo 2">
     </div>
@@ -47,7 +58,7 @@
         </div>
       </div>
       </footer>
-  
+      <script src="miarchivo.js"></script>
     <script src="https://kit.fontawesome.com/bdbed0aafa.js" crossorigin="anonymus"></script>
 </body>
 </html>
