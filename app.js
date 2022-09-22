@@ -62,7 +62,7 @@ formulario.appendChild(nuevoContenido)
 
 
  //registro
-const form = document.getElementById('formulario')
+const form = document.getElementById("formulario")
 const enviarFormulario = (event)=> {
 event.preventDefault()
 const {name,email,apellido,contraseña} = event.target
@@ -75,9 +75,5 @@ if(contraseña.value.length < 8) alert("Su contraseña debe tener más de 8 cara
 }
 form.addEventListener('submit', enviarFormulario);
   
-function enviarFormulario(e) {
-   e.proventDefault();
-  console.log("Registrado") 
-}
 
 
