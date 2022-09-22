@@ -31,37 +31,53 @@ console.log(trabajadores)
 const turnoFotografa = new Date ("septiembre 10, 2022 20:00");
 console.log(turnoFotografa)
  */
-class cliente {
+/*   class cliente {
    constructor (usuario, clave){
       this.usuario = usuario;
       this.clave = clave;
    }
 }
-
-let button = document.getElementById ("ingreso");
-button.addEventListener("click", cargarCliente)
+const inicio = document.getElementById ('inicioSesion');
+inicio.addEventListener("click",cargarCliente)
 
 function cargarCliente(){
-   let usuario = document.getElementById ("usuario").value;
-   let clave = document.getElementById("clave").value;
-   let cliente1 = new cliente(usuario, clave);
+   const usuario = document.getElementById ("usuario").value;
+   const clave = document.getElementById("clave").value;
+   const cliente1 = new cliente(usuario, clave);
    console.log(cliente1);
    mostrarCliente(cliente1);
 }
 function mostrarCliente(cliente) {
-   let formulario = document.getElementById ("customer")
+   const formulario = document.getElementById ("customer")
    formulario.innerHTML = "";
 
-let nuevoContenido = document.createElement("div");
+const nuevoContenido = document.createElement("div");
 nuevoContenido.innerHTML = `<h1> Hola ${cliente.usuario}! has iniciado sesión</h1>`;
 nuevoContenido.className = "info-cliente";
 formulario.appendChild(nuevoContenido)
+} 
+ */
+ 
+
+
+
+ //registro
+const form = document.getElementById('formulario')
+const enviarFormulario = (event)=> {
+event.preventDefault()
+const {name,email,apellido,contraseña} = event.target
+console.log(name.value, 
+   email.value,
+   apellido.value,
+   contraseña.value);
+if(name.value.length, email.value.length, apellido.value.length === 0) alert ("Complete sus datos")
+if(contraseña.value.length < 8) alert("Su contraseña debe tener más de 8 caracteres")
 }
-
-
-
-
-
-
+form.addEventListener('submit', enviarFormulario);
+  
+function enviarFormulario(e) {
+   e.proventDefault();
+  console.log("Registrado") 
+}
 
 
